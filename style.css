@@ -532,6 +532,19 @@ body{
     justify-items: center;
     row-gap: 3px;
     animation: up-down 1.5s linear infinite;
+    animation-delay: 1.85s;
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(8px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(8px);
+    }
 }
 
 .home-scroll-btn:hover{

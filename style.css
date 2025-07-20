@@ -13,9 +13,9 @@
     /*Beige - hsl(50, 45%, 87%)*/
     /*Wine pink - hsl(342, 42%, 44%)*/
 
-    --hue: 217;
-    --sat: 85%;
-    --light: 74%;
+    --hue: 330;
+    --sat: 73%;
+    --light: 72%;
 
     --primary-color: hsl(var(--hue) var(--sat) var(--light));
     --white-color: hsl(var(--hue) 45% 98%);

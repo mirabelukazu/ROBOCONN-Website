@@ -13,9 +13,9 @@
     /*Beige - hsl(50, 45%, 87%)*/
     /*Wine pink - hsl(342, 42%, 44%)*/
 
-    --hue: 330;
-    --sat: 73%;
-    --light: 72%;
+    --hue: 245;
+    --sat: 54%;
+    --light: 74%;
 
     --primary-color: hsl(var(--hue) var(--sat) var(--light));
     --white-color: hsl(var(--hue) 45% 98%);
@@ -35,7 +35,7 @@
     --bottom-nav-bg: hsl(var(--hue) 32% 25% / .65);
     --card-bg: linear-gradient(120deg, hsl(var(--hue) 54% 74% / .15), hsl(var(--hue) 54% 74% / .05));
     --modal-backdrop-bg: hsl(var(--hue) 54% 74% / .1);
-    --footer-bg: inear-gradient(360deg, hsl(var(--hue) 54% 74% / .15), hsl(var(--hue) 54% 74% / .1));
+    --footer-bg: linear-gradient(360deg, hsl(var(--hue) 54% 74% / .15), hsl(var(--hue) 54% 74% / .1));
 
     --scrollbar-color: hsl(var(--hue) 25% 20%);
     --scrollbar-thumb: hsl(var(--hue) var(--sat) var(--light));
@@ -1038,6 +1038,134 @@ body{
 }
 
 /*--Apply--*/
+.swiper{
+    width: 100%;
+    max-width: 1050px;
+    height: 300px;
+}
 
-/*--Testing and debugging--*/
+.swiper-slide{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 45px;
+}
 
+.swiper-slide .info-img{
+    width: 185px;
+}
+
+.swiper-slide .info-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.swiper-slide .info-details{
+    max-width: 500px;
+    text-align: left;
+}
+
+.swiper-slide .info-details h3{
+    color: var(--color-02);
+    font-size: var(--xlarge-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 5px;
+}
+
+.swiper-slide .info-details span{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-regular);
+}
+
+.swiper-slide .info-details p span{
+    display: inline;
+    color: var(--color-01);
+}
+
+.swiper-slide .info-details p{
+    color: var(--color-02);
+    font-size: var(--base-font-size);
+    font-weight: var(--font-regular);
+    margin-top: 15px;
+}
+
+.apply-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after{
+    display: none;
+}
+
+.swiper-button-next i, 
+.swiper-button-prev i{
+    color: var(--primary-color);
+    font-size: 4.5rem;
+    transition: .3s ease;
+}
+
+.swiper-button-next i:hover, 
+.swiper-button-prev i:hover{
+    color: var(--hover-color);
+}
+
+.swiper-pagination-bullet, 
+.swiper-pagination-bullet-active{
+    background: var(--primary-color);
+}
+
+/*--Footer--*/
+.robo-footer{
+    background: var(--footer-bg);
+    padding-top: 100px;
+    padding-bottom: 165px;
+}
+
+.robo-footer .robo-container .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 22px;
+    row-gap: 22px;
+}
+
+.footer-menu .menu-item a{
+    color: var(--color-01);
+    font-size: calc(var(--tiny-font-size) - .07rem);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    padding: 3px 12px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.footer-menu .menu-item a:hover{
+    color: var(--color-03);
+    background: var(--color-01);
+}
+
+.robo-footer .terms{
+    color: var(--color-04);
+    font-size: var(--tiny-font-size);
+    margin-top: 10px;
+}
+
+.robo-footer .terms a:hover{
+    color: var(--color-01);
+    transition: .3s;
+}

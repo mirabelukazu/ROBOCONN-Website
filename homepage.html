@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoboCONN</title>
     <link rel="icon" href="hourglassIcon.ico" type="image/x-icon">
-    <!--Swipper CSS-->
-
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <!--Link reference to Main css stylesheet-->
     <link rel="stylesheet" href="style.css">
 
@@ -26,7 +26,7 @@
                 </div>
                 <div class="header-btns">
                     <div class="robo-main-btn border-btn apply-btn">
-                        <a href="#apply" class="logo">Apply</a>
+                        <a href="#apply" class="logo">Apply Now</a>
                     </div>
                     <a href="#apply" class="apply-icon"><i class="ri-clipboard-line"></i></a>
                     <div class="theme-btn">
@@ -63,11 +63,12 @@
         <div class="robo-container home-container">
             <div class="robo-wrapper">
                 <div class="home-social">
-                    <span>Follow On</span>
+                    <span>Contact Us</span>
                     <div class="social-line"></div>
                     <ul class="social-icons">
                         <li><a href="https://www.instagram.com/brownu_robotics?igsh=Ym94dGgyYWFjajls"><i class="ri-bear-smile-line"></i> <i class="ri-instagram-line"></i></a></li>
                         <li><a href="https://www.instagram.com/curobotics?igsh=eHR1NDNjNG1tOHI0"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="mailto:roboconn.outreach@gmail.com"><i class="ri-mail-line"></i></a></li>
                     </ul>
                 </div>
                 <div class="avatar-container">
@@ -107,7 +108,7 @@
                 </div>
                 <div class="section-content">
                     <div class="about-img">
-                        <img src="images/pinkPlayer.jfif" alt="">
+                        <img src="images/testAvatar.png" alt="">
                     </div>
                     <div class="about-details">
                         <div class="about-info">
@@ -615,14 +616,87 @@
     <section class="robo-section nav-menu-section" id="apply">
         <div class="robo-container robo-sub-container">
             <div class="robo-wrapper">
-                <div class="section-title apply-title"></div>
-                <div class="section-content"></div>
+                <div class="section-title apply-title">
+                    <h3>Apply</h3>
+                    <p>Interested? Apply to attend event</p>
+                </div>
+                <div class="section-content">
+                    <div class="swiper robo-apply-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="info-img">
+                                    <img src="images/coin.png" alt="">
+                                </div>
+                                <div class="info-details">
+                                    <h3>Cost of Attendance</h3>
+                                    <span>Entrance Fees</span>
+                                    <p>Attendance is <span>FREE</span> for participating students.</p>
+                                    <p>Non-partipating students pay a base fee of <span>$20</span>.</p>
+                                    <p>Non-students pay a fee of <span>$100</span>.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="info-img">
+                                    <img src="images/spellbook.gif" alt="">
+                                </div>
+                                <div class="info-details">
+                                    <h3>Prizes and Awards</h3>
+                                    <span>Lorem ipsum dolor.</span>
+                                    <p>Ratione soluta dolores totam officia libero tempore tempora non possimus saepe,</p>
+                                    <p>eveniet quisquam minima id mollitia ea eligendi expedita quis molestiae veritatis?</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="info-img">
+                                    <img src="images/seagull.gif" alt="">
+                                </div>
+                                <div class="info-details">
+                                    <h3>Additional Info</h3>
+                                    <span>FAQ</span>
+                                    <P>Who can attend: Anyone Interested or curious about robotics or the world of tech</P>
+                                    <p>Travel costs: Cost of travel and accomdations are considered individual expenses, however snacks and drinks will be made available at event location</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="apply-btn-container">
+                <div class="robo-main-btn fill-btn">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzFyJmUuDfwdsiWi5cKOgf-D7GXZnVdIu0KYdGOMgr_Ikcdg/viewform?usp=sharing&ouid=102553051055423039150">Apply</a>
+                </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!--Footer-->
-
+    <footer class="robo-footer">
+        <div class="robo-container">
+            <div class="inner">
+                <div class="robo-logo">
+                    <a href="#home" class="current"><i class="ri-home-heart-line"></i><span> RoboCONN</span></a>
+                </div>
+                <ul class="footer-menu">
+                    <li class="menu-item"><a href="#about"><span>About</span></a></li>
+                    <li class="menu-item"><a href="#schedule"><span>Schedule</span></a></li>
+                    <li class="menu-item"><a href="#team"><span>Team</span></a></li>
+                    <li class="menu-item"><a href="#apply"><span>Apply</span></a></li>
+                </ul>
+                <p class="terms">By applying to this event, you agree to follow the <a href="">Terms and Conditions</a> for RoboCONN 2026</p>
+            </div>
+        </div>
+    </footer>
+    <!--Swiper JS-->
+    <script src="swiper-bundle.min.js"></script>
     <!--Main Javascript-->
     <script src="script.js"></script>
 </body>

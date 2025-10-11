@@ -96,4 +96,18 @@ teamCardsWithModals.forEach((teamCardWithModal) => {
         }, 100);
     });
 });
+/*Apply Swiper */
+var swiper = new Swiper(".robo-apply-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 /*Shrink the Height of the header on scroll*/

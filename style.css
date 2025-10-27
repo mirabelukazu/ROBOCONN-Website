@@ -1126,15 +1126,6 @@ body{
     row-gap: 25px;
 }
 
-.team-modal .modal-img{
-    width: 100%;
-}
-
-.team-modal .modal-img img{
-    width: 100%;
-    border-radius: 10px;
-}
-
 .team-modal .modal-content .modal-title{
     color: var(--color-02);
     font-size: var(--h4-font-size);

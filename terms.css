@@ -1,0 +1,59 @@
+/* Reusable button style */
+
+.terms-section {
+  min-height: 100vh;
+  padding: 8em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(120deg, hsl(var(--hue) 54% 74% / .08), hsl(var(--hue) 54% 74% / .03));
+}
+
+.terms-content {
+  max-width: 850px;
+  margin: 0 auto;
+  color: var(--color-02);
+  font-size: var(--base-font-size);
+  line-height: 1.8;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  color: var(--color-01);
+}
+
+.terms-item {
+  margin-bottom: 2em;
+}
+
+.terms-item h3 {
+  font-size: 1.2em;
+  color: var(--color-01);
+  margin-bottom: 0.5em;
+}
+
+.terms-item p {
+  margin-bottom: 0.8em;
+  text-align: justify;
+}
+
+.terms-item ul {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.terms-item li {
+  list-style: disc;
+  margin-bottom: 0.5em;
+}
+
+
+.back-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}

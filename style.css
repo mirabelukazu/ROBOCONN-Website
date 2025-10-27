@@ -17,7 +17,12 @@
     --sat: 85%;
     --light: 74%;
 
+    --hue2: 24.5;
+    --sat2: 18.5%;
+    --light2: 53.3%;
+
     --primary-color: hsl(var(--hue) var(--sat) var(--light));
+    --secondary-color: hsl(var(--hue2) var(--sat2) var(--light2));
     --white-color: hsl(var(--hue) 45% 98%);
     --dark-color: hsl(var(--hue) 26% 12%);
 
@@ -25,7 +30,7 @@
     --color-01: hsl(var(--hue) var(--sat) var(--light)); /*primary to dark*/
     --color-02: hsl(var(--hue) 45% 98%); /*white to dark*/
     --color-03: hsl(var(--hue) 26% 12%); /*dark to white*/
-    --color-04: hsl(var(--hue) 0% 62%); /*light-gray to dark-gray*/
+    --color-04: hsl(var(--hue2) var(--sat2) var(--light2)); /*light-gray to dark-gray*/
     --color-05: hsl(var(--hue) 26% 12%); /*dark to primary*/
 
     --body-color: hsl(250 26% 12%);
@@ -80,6 +85,51 @@
 }
 
 /*-----Light Theme-----*/
+.light-theme{
+    /*Changeable colors for light/dark themes*/
+    --color-01: hsl(var(--hue) 26% 12%); /*primary to dark*/
+    --color-02: hsl(var(--hue) 26% 12%); /*white to dark*/
+    --color-03: hsl(var(--hue) 45% 98%); /*dark to white*/
+    --color-04: hsl(var(--hue2) 9% 46%); /*light-gray to dark-gray*/
+    --color-05: hsl(var(--hue) var(--sat) var(--light)); /*dark to primary*/
+
+    --body-color: hsl(var(--hue2) 45% 98%);
+
+    /*Background colors*/
+    --bottom-nav-bg: hsl(var(--hue) 32% 85% / .8);
+    --card-bg: hsl(25 100% 97%);
+    --modal-backdrop-bg: hsl(var(--hue) 50% 12% / .5);
+    --footer-bg: linear-gradient(360deg, hsl(var(--hue) var(--sat) var(--light)), hsl(var(--hue) var(--sat) var(--light) / .75));
+
+    --scrollbar-color: hsl(var(--hue) 9% 60%);
+    --scrollbar-thumb: hsl(var(--hue) 9% 25%);
+    --scrollbar-thumb-hover: hsl(var(--hue) 9% 17%);
+    
+    .bottom-nav .menu-hide-btn {
+        box-shadow: 0 2px 4px hsl(0, 0%, 1%, .25);
+    }
+
+    .pro-card,
+    .team-card{
+        box-shadow: 0 2px 8px hsl(0, 0%, 1%, .05);
+    }
+
+    .robo-footer .terms{
+        color: hsl(var(--hue) 26% 30%);
+    }
+
+    .robo-footer .terms a{
+        color: hsl(var(--hue) 26% 30%);
+    }
+
+    .robo-footer .terms a:hover{
+        color: hsl(var(--hue2) 20% 90%);
+    }
+
+    .to-top-btn{
+        background: hsl(var(--hue) 26% 12% / .2);
+    }
+}
 /*--Reset / Normalize--*/
 *{
     box-sizing: border-box;
@@ -186,7 +236,7 @@ body{
 
 .cursor-dot{
     position: absolute;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     width: 5px;
     height: 5px;
     transform: translate(-50%, -50%);
@@ -367,8 +417,20 @@ body{
     transform: rotate(-15deg);
 }
 
-.theme-btn .moon-icon{
+/* .theme-btn .moon-icon{
     display: none;
+} */
+
+.theme-btn.active-sun-icon .moon-icon,
+.theme-btn .sun-icon{
+    opacity: 1;
+    transition: .3s;
+}
+
+.theme-btn.active-sun-icon .sun-icon,
+.theme-btn .moon-icon{
+    opacity: 0;
+    transition: .3s;
 }
 
 .fill-btn{
@@ -746,6 +808,10 @@ body{
     color: var(--color-02);
     font-size: var(--h4-font-size);
     font-weight: var(--font-semi-bold);
+    margin-bottom: 30px;
+}
+
+.about-info .interest{
     margin-bottom: 30px;
 }
 

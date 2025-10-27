@@ -243,6 +243,25 @@ cursorHoverlinks.forEach((cursorHoverlink) => {
 /*Website dark/light theme*/
 //Change theme and save current theme n click the theme button
 const themeBtn = document.querySelector(".theme-btn");
+
 themeBtn.addEventListener("click", () => {
+    //Change theme icon and theme btn
     themeBtn.classList.toggle("active-sun-icon");
+    document.body.classList.toggle("light-theme");
+
+    //Save theme icon and theme on click theme button
+    const getCurrentIcon = () => themeBtn.classList.contains("active-sun-icon") ? "sun" : "moon";
+    const getCurrentTheme = () => document.body.classList.contains("light-theme") ? "light" : "dark";
+
+    localStorage.setItem("robo-saved-icon", getCurrentIcon());
+    localStorage.setItem("robo-saved-theme", getCurrentTheme());
+});
+
+//Get saved icon and theme on document load
+const savedIcon = localStorage.getItem("robo-saved-icon");
+const savedTheme = localStorage.getItem("robo-saved-theme");
+
+document.addEventListener("DOMContentLoaded", () => {
+    themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("active-sun-icon");
+    document.body.classList[savedTheme === "light" ? "add" : "remove"]("light-theme");
 });

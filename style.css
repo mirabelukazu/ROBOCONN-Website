@@ -1441,7 +1441,64 @@ body{
 
 /* Media Queries (max-width: 768px)*/
 @media screen and (max-width: 768px){
+    :root{
+        /*Font Size*/
+    --h1-font-size: 2.3rem;
+    --h2-font-size: 1.97rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1.3rem;
+    --h5-font-size: 1.05rem;
 
+    --xlarge-font-size: 1.28rem;
+    --large-font-size: 1.13rem;
+    --medium-font-size: 1.06rem;
+    --base-font-size: 1rem;
+    --small-font-size: .93rem;
+    --tiny-font-size: .88rem;
+    }
+    .robo-container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .robo-logo a {
+        font-size: 2.35rem;
+    }
+    .apply-btn{
+        display: none;
+    }
+    .apply-icon{
+        font-size: 1.6rem;
+        display: block;
+    }
+    .theme-btn i{
+        font-size: 1.6rem;
+    }
+    .bottom-nav.active{
+        bottom: -30px;
+    }
+    .bottom-nav.active{
+        bottom: 30px;
+    }
+    .bottom-nav .menu li a i {
+        font-size: 1.25rem;
+    }
+    .home-social .social-line {
+        margin-top: 32px;
+        margin-bottom: 20px;
+    }
+    .schedule-items .item .info {
+        width: 185px;
+        column-gap: 15px;
+    }
+    .schedule-items .item-left .info {
+        right: 25px;
+    }
+    .schedule-items .item-right .info {
+        right: 75px;
+    }
+    .schedule-items .item .info i {
+        display: none;
+    }
 }
 
 /* Media Queries (max-width: 480px)*/

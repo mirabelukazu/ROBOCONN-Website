@@ -313,7 +313,6 @@ body{
 /*--Buttons--*/
 .robo-main-btn{
     width: fit-content;
-    padding: 14px 30px;
     border-radius: 35px;
     cursor: pointer;
     transition: .3s;
@@ -326,6 +325,8 @@ body{
 }
 
 .robo-main-btn a{
+    display: block;
+    padding: 14px 30px;
     color: var(--color-01);
     font-size: var(--small-font-size);
     font-weight: 500;
@@ -834,11 +835,12 @@ body{
 .pro-card{
     background: var(--card-bg);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    column-gap: 10px;
+    row-gap: 10px;
     padding: 35px 25px;
-    text-align: left;
+    text-align: center;
     border-radius: 5px;
 }
 
@@ -853,7 +855,6 @@ body{
     font-size: var(--tiny-font-size);
     font-weight: var(--font-regular);
     line-height: 25px;
-    max-width: 100px;
 }
 
 .about-buttons{
@@ -1347,6 +1348,10 @@ body{
     color: var(--color-04);
     font-size: var(--tiny-font-size);
     margin-top: 10px;
+}
+
+.robo-footer .terms a{
+    text-decoration: underline;
 }
 
 .robo-footer .terms a:hover{

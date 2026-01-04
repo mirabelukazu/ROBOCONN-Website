@@ -34,4 +34,10 @@ window.addEventListener("DOMContentLoaded", () => {
       p.style.transform = "translateY(0)";
     }, i * 200);
   });
+
+  /* Set copyright year dynamically */
+  const copyrightYear = document.getElementById("copyright-year");
+  if (copyrightYear) {
+    copyrightYear.textContent = new Date().getFullYear();
+  }
 });

@@ -961,7 +961,7 @@ body{
 }
 
 .schedule-items .item .info{
-    position: absolute;
+    position: relative;
     width: 85vw;
     max-width: 360px;
     display: flex;
@@ -970,11 +970,11 @@ body{
 }
 
 .schedule-items .item-left .info{
-    right: 35px;
+    right: auto;
 }
 
 .schedule-items .item-right .info{
-    left: 50px;
+    left: auto;
 }
 
 .schedule-items .item .info i{

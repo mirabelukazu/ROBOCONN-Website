@@ -1537,6 +1537,7 @@ body{
     .schedule-items .item .info h5,
     .schedule-items .item .info p{
         white-space: normal;
+    }
 }
 
 /* Media Queries (max-width: 480px)*/

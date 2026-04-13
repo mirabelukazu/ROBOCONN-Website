@@ -940,7 +940,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 160px;
+    row-gap: 125px;
 }
 
 .schedule-items .item{
@@ -961,10 +961,9 @@ body{
 
 .schedule-items .item .info{
     position: absolute;
-    width: 85vw;
-    max-width: 360px;
+    width: 250px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     column-gap: 20px;
 }
 
@@ -985,7 +984,7 @@ body{
     color: var(--color-02);
     font-size: var(--h5-font-size);
     font-weight: var(--font-semi-bold);
-    white-space: normal;
+    white-space: break-spaces;
     line-height: 1.25;
     margin-bottom: 10px;
 }
@@ -993,8 +992,8 @@ body{
 .schedule-items .item .info p{
     color: var(--color-04);
     font-size: var(--small-font-size);
-    white-space: normal;
-    margin-bottom: 10px;
+    white-space: nowrap;
+    margin-bottom: 18px;
     line-height: 1.4;
 }
 

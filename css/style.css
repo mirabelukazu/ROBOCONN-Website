@@ -1526,15 +1526,17 @@ body{
         align-items: flex-start;
         column-gap: 12px;
     }
-    .schedule-items .item-left .info {
+    .schedule-items .item-left .info,
+    .schedule-items .item-right .info{
         left: auto;
-    }
-    .schedule-items .item-right .info {
         right: auto;
     }
     .schedule-items .item .info i {
         display: none;
     }
+    .schedule-items .item .info h5,
+    .schedule-items .item .info p{
+        white-space: normal;
 }
 
 /* Media Queries (max-width: 480px)*/

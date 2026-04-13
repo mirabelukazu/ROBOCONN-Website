@@ -1497,46 +1497,19 @@ body{
         display: block;
     }
 
-/*testing new mobile format*/
-    .schedule-line{
-        display: none;
+    .schedule-items .item .info {
+        width: 185px;
+        column-gap: 15px;
     }
-
-    .schedule.items{
-        position: static;
-        display: flex;
-        flex-direction: column;
-        row-gap: 32px;
-        align-items: stretch;
-    }
-    .schedule-items .item{
-        position: static;
-        display: block;
-    }
-
-    .schedule-items .item: :before{
-        display: none;
+    .schedule-items .item-left .info{
+        right: 25px;
     }
     
-    .schedule-items .item .info {
-        position: static;
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        align-items: flex-start;
-        column-gap: 12px;
-    }
-    .schedule-items .item-left .info,
     .schedule-items .item-right .info{
-        left: auto;
-        right: auto;
+        left: 25px;
     }
     .schedule-items .item .info i {
         display: none;
-    }
-    .schedule-items .item .info h5,
-    .schedule-items .item .info p{
-        white-space: normal;
     }
 }
 

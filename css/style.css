@@ -1015,6 +1015,7 @@ body{
 .day1, .day2{
     transform: translateY(35px);
 }
+    
 
 /*--Team--*/
 .team-tabs{
@@ -1501,7 +1502,7 @@ body{
     .schedule-line{
         display: none;
     }
-    .schedule.items{
+    .schedule-items{
         position: static;
         display: flex; 
         flex-direction: column;
@@ -1520,7 +1521,7 @@ body{
         display: none;
     }
 
-    schedule-items .item .info{
+    .schedule-items .item .info{
         position: static;
         width: 100%;
         max-width: 100%;
@@ -1529,10 +1530,10 @@ body{
         column-gap: 12px;
     }
 
-    .schedule-items .item-left.info{
+    .schedule-items .item-left .info{
         left: auto;
     }
-    .schedule-items .item-right.info{
+    .schedule-items .item-right .info{
         right: auto;
     }
 
@@ -1540,8 +1541,8 @@ body{
         display: none;
     }
 
-    .schedule-items . item .info h5,
-    .schedule-items . item .info p{
+    .schedule-items .item .info h5,
+    .schedule-items .item .info p{
         white-space: normal;
     }
     #schedule{

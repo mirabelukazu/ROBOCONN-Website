@@ -940,7 +940,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 125px;
+    row-gap: 160px;
 }
 
 .schedule-items .item{
@@ -961,7 +961,8 @@ body{
 
 .schedule-items .item .info{
     position: absolute;
-    width: 300px;
+    width: 85vw;
+    max-width: 360px;
     display: flex;
     align-items: flex-start;
     column-gap: 20px;

@@ -1493,24 +1493,56 @@ body{
         margin-top: 32px;
         margin-bottom: 20px;
     }
+/*new sched mobil test*/
     .schedule-tab-content.active{
         display: block;
     }
 
-    .schedule-items .item .info {
-        width: 185px;
-        column-gap: 15px;
-    }
-    .schedule-items .item-left .info{
-        right: 25px;
-    }
-    
-    .schedule-items .item-right .info{
-        left: 25px;
-    }
-    .schedule-items .item .info i {
+    .schedule-line{
         display: none;
     }
+    .schedule.items{
+        position: static;
+        display: flex; 
+        flex-direction: column;
+        row-gap: 28px;
+        align-items: stretch;
+    }
+
+    .schedule-items .item{
+        position: static;
+        display: block;
+    }
+
+    .schedule-items .item::before{
+        display: none;
+    }
+
+    schedule-items .item .info{
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+
+    .schedule-items .item-left.info{
+        left: auto;
+    }
+    .schedule-items .item-right.info{
+        right: auto;
+    }
+
+    .schedule-items .item .info i{
+        display: none;
+    }
+
+    .schedule-items . item .info h5,
+    .schedule-items . item .info p{
+        white-space: normal;
+    }
+    #schedule{
+        padding-bottom: 120px;
+    } 
 }
 
 /* Media Queries (max-width: 480px)*/

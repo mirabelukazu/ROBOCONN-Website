@@ -932,11 +932,12 @@ body{
 .day1 .schedule-line{
     background: var(--primary-color);
     width: 2px;
-    height: 880px;
+    height: 100%;
+    min-height: 100%;
 }
 
 .schedule-items{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;

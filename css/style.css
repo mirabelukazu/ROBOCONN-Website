@@ -931,7 +931,7 @@ body{
 .day1 .schedule-line{
     background: var(--primary-color);
     width: 2px;
-    height: 880px;
+    height: 1000px;
 }
 
 .schedule-items{

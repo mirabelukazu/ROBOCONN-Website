@@ -1009,7 +1009,7 @@ body{
 .day2 .schedule-line{
     background: var(--primary-color);
     width: 2px;
-    height: 750px;
+    height: 1050px;
 }
 
 .day1, .day2{
@@ -1214,7 +1214,7 @@ body{
 }
 
 .team-modal .modal-content .role{
-    color: var(--white-color);
+    color: var(--primary-color);
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
 }

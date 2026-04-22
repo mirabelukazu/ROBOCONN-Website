@@ -932,7 +932,7 @@ body{
 .day1 .schedule-line{
     background: var(--primary-color);
     width: 2px;
-    height: 1300px;
+    height: 1450px;
 }
 
 .schedule-items{
@@ -1015,6 +1015,10 @@ body{
     background: var(--primary-color);
     width: 2px;
     height: 1750px;
+}
+
+#schedule{
+    padding-bottom: 160px;
 }
 
 .day1, .day2{

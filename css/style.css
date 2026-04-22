@@ -1007,6 +1007,10 @@ body{
     border-radius: 3px;
 }
 
+.schedule-items .item-lunch{
+    margin-bottom: 34px;
+}
+
 .day2 .schedule-line{
     background: var(--primary-color);
     width: 2px;
@@ -1531,7 +1535,7 @@ body{
         position: absolute;
         left: 14px;
         top: 0;
-        bottom: 0;
+        bottom: -22px;
         width: 2px;
         height: auto;
     }
@@ -1539,10 +1543,10 @@ body{
         position: static;
         display: flex; 
         flex-direction: column;
-        row-gap: 28px;
+        row-gap: 42px;
         align-items: stretch;
         width: 100%;
-        padding-left: 36px;
+        padding-left: 40px;
     }
 
     .schedule-items .item{
@@ -1572,6 +1576,10 @@ body{
     }
     .schedule-items .item-right .info{
         right: auto;
+    }
+
+    .schedule-items .item-lunch{
+        margin-bottom: 0;
     }
 
     .schedule-items .item .info i{

@@ -1014,7 +1014,7 @@ body{
 .day2 .schedule-line{
     background: var(--primary-color);
     width: 2px;
-    height: 1050px;
+    height: 1150px;
 }
 
 .day1, .day2{

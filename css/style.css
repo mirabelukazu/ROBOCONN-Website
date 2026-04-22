@@ -1527,7 +1527,13 @@ body{
     }
 
     .schedule-line{
-        display: none;
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        height: auto;
     }
     .schedule-items{
         position: static;
@@ -1536,6 +1542,7 @@ body{
         row-gap: 28px;
         align-items: stretch;
         width: 100%;
+        padding-left: 36px;
     }
 
     .schedule-items .item{
@@ -1545,7 +1552,9 @@ body{
     }
 
     .schedule-items .item::before{
-        display: none;
+        display: block;
+        left: -28px;
+        top: 22px;
     }
 
     .schedule-items .item .info{

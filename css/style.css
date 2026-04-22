@@ -110,7 +110,8 @@
     }
 
     .pro-card,
-    .team-card{
+    .team-card,
+    #sponsors .swiper-slide .info-img{
         box-shadow: 0 2px 8px hsl(0, 0%, 1%, .05);
     }
 
@@ -940,7 +941,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 125px;
+    row-gap: 150px;
 }
 
 .schedule-items .item{
@@ -1004,6 +1005,10 @@ body{
     font-size: var(--font-medium);
     padding: 3px 12px;
     border-radius: 3px;
+}
+
+.schedule-items .item-lunch{
+    margin-bottom: 34px;
 }
 
 .day2 .schedule-line{
@@ -1241,13 +1246,39 @@ body{
     column-gap: 45px;
 }
 
+#sponsors .swiper-slide{
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px 28px;
+    box-sizing: border-box;
+    column-gap: 30px;
+}
+
 .swiper-slide .info-img{
     width: 185px;
+}
+
+#sponsors .swiper-slide .info-img{
+    width: 300px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
 }
 
 .swiper-slide .info-img img{
     width: 100%;
     border-radius: 10px;
+}
+
+#sponsors .swiper-slide .info-img img{
+    max-height: 190px;
+    object-fit: contain;
+}
+
+#sponsors .swiper-slide .info-details{
+    padding: 0;
 }
 
 .swiper-slide .info-details{
@@ -1500,25 +1531,35 @@ body{
     }
 
     .schedule-line{
-        display: none;
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: 0;
+        bottom: -22px;
+        width: 2px;
+        height: auto;
     }
     .schedule-items{
         position: static;
         display: flex; 
         flex-direction: column;
-        row-gap: 28px;
+        row-gap: 42px;
         align-items: stretch;
         width: 100%;
+        padding-left: 40px;
     }
 
     .schedule-items .item{
-        position: static;
+        position: relative;
         display: block;
         width: 100%;
     }
 
     .schedule-items .item::before{
-        display: none;
+        position: absolute;
+        display: block;
+        left: -28px;
+        top: 22px;
     }
 
     .schedule-items .item .info{
@@ -1535,6 +1576,10 @@ body{
     }
     .schedule-items .item-right .info{
         right: auto;
+    }
+
+    .schedule-items .item-lunch{
+        margin-bottom: 0;
     }
 
     .schedule-items .item .info i{

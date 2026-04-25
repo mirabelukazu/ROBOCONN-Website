@@ -932,7 +932,7 @@ body{
 .day1 .schedule-line{
     background: var(--primary-color);
     width: 2px;
-    height: 1300px;
+    height: 1450px;
 }
 
 .schedule-items{
@@ -1015,6 +1015,10 @@ body{
     background: var(--primary-color);
     width: 2px;
     height: 1750px;
+}
+
+#schedule{
+    padding-bottom: 160px;
 }
 
 .day1, .day2{
@@ -1527,13 +1531,16 @@ body{
     }
 /*new sched mobil test*/
     .schedule-tab-content.active{
+        --timeline-line-x: 19px;
+        --timeline-content-offset: 40px;
+        --timeline-dot-size: 15px;
         display: block;
     }
 
     .schedule-line{
         display: block;
         position: absolute;
-        left: 14px;
+        left: var(--timeline-line-x);
         top: 0;
         bottom: -22px;
         width: 2px;
@@ -1546,7 +1553,7 @@ body{
         row-gap: 42px;
         align-items: stretch;
         width: 100%;
-        padding-left: 40px;
+        padding-left: var(--timeline-content-offset);
     }
 
     .schedule-items .item{
@@ -1558,7 +1565,7 @@ body{
     .schedule-items .item::before{
         position: absolute;
         display: block;
-        left: -28px;
+        left: calc(var(--timeline-line-x) - var(--timeline-content-offset) - (var(--timeline-dot-size) / 2));
         top: 22px;
     }
 
